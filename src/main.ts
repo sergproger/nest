@@ -1,3 +1,7 @@
+import "materialize-css";
+import "angular2-materialize";
+import "materialize-css/bin/materialize.css";
+
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { enableProdMode } from '@angular/core';
 
