@@ -3,6 +3,9 @@ import { BrowserModule }  from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
+import "materialize-css";
+import {MaterializeDirective} from "angular2-materialize";
+
 import {NavbarComponent} from './navbar/navbar.component';
 import {FooterComponent} from './footer/footer.component'
 
@@ -12,6 +15,7 @@ import {FooterComponent} from './footer/footer.component'
   ],
   declarations: [
     AppComponent,
+    MaterializeDirective,
     NavbarComponent,
     FooterComponent
   ],
