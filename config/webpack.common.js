@@ -41,6 +41,10 @@ module.exports = {
     ]
   },
 
+  externals: {
+    jquery: 'jQuery'
+  },
+  
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
       name: ['app', 'vendor', 'polyfills']

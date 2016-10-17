@@ -4,20 +4,22 @@ import { BrowserModule }  from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 
 import "materialize-css";
-import {MaterializeDirective} from "angular2-materialize";
+import { MaterializeModule } from "angular2-materialize";
 
-import {NavbarComponent} from './navbar/navbar.component';
-import {FooterComponent} from './footer/footer.component'
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component'
+import { SideMenuComponent } from './navbar/side-menu/side-menu.component'
 
 @NgModule({
   imports: [
-    BrowserModule
+    BrowserModule,
+    MaterializeModule
   ],
   declarations: [
     AppComponent,
-    MaterializeDirective,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    SideMenuComponent
   ],
   bootstrap: [ AppComponent ]
 })
