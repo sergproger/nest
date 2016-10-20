@@ -1,6 +1,7 @@
 <div class="row">
     <form class="col s12">
       <div class="row">
+        //First string with First and Last name
         <div class="input-field col s6">
           <i class="material-icons prefix">account_circle</i>
           <input id="First name" type="text" class="validate">
@@ -10,6 +11,7 @@
           <input id="last_name" type="text" class="validate">
           <label for="last_name">Last Name</label>
         </div>
+        //Secont string with number phone and skype
         <div class="input-field col s6">
           <i class="material-icons prefix">phone</i>
           <input id="icon_telephone" type="tel" class="validate">
@@ -19,6 +21,30 @@
           <input id="skype" type="text" class="validate">
           <label for="skype">Skype</label>
         </div>
-      </div>
+        //Email 
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                 <i class="material-icons prefix">email</i>
+                <input id="email" type="email" class="validate">
+                <label for="email" data-error="wrong" data-success="right">Email</label>
+              </div>
+            </div>
+          </form>
+        </div>
+        //upload photoes
+        <form action="#">
+          <div class="file-field input-field">
+            <div class="btn">
+              <span>Upload photo</span>
+              <input type="file" multiple>
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" type="text" placeholder="Upload one or more photos">
+            </div>
+          </div>
+        </form>
+        </div>
     </form>
   </div>
