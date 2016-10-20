@@ -12,8 +12,10 @@ import { MaterializeModule } from "angular2-materialize";
 
 import { FirstviewComponent } from './firstview/firstview.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { FooterComponent } from './footer/footer.component'
-import { SideMenuComponent } from './navbar/side-menu/side-menu.component'
+import { FooterComponent } from './footer/footer.component';
+import { SideMenuComponent } from './navbar/side-menu/side-menu.component';
+import { RegistrationComponent } from './registration/registration.component';
+
 
 import { PageNotFoundComponent } from './404error/page-not-found.component';
 
@@ -30,7 +32,8 @@ import { PageNotFoundComponent } from './404error/page-not-found.component';
     NavbarComponent,
     FooterComponent,
     PageNotFoundComponent,
-    SideMenuComponent
+    SideMenuComponent,
+    RegistrationComponent
   ],
   bootstrap: [ AppComponent ]
 })
