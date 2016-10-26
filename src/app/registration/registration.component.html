@@ -1,6 +1,6 @@
-<div class="container center">
+<div class="container">
 	<div class="row forcenter">
-		<h1 class="yellow-text text-darken-2  ">Регистрация</h1>
+		<h3 class="yellow-text text-darken-2 center ">Регистрация</h3>
 		<div class="col s12 m12">
 			<div class="grey lighten-5 card-panel teal">
 				<div class="row">
@@ -10,48 +10,111 @@
 							<div class="input-field col s6">
 								<i class="material-icons prefix">account_circle</i>
 								<input id="First name" type="text" class="validate">
-								<label for="First name">First Name</label>
+								<label for="First name">Ваше имя</label>
 							</div>
-							<div class="input-field col s6">
+							<div class="input-field col s4">
 								<input id="last_name" type="text" class="validate">
-								<label for="last_name">Last Name</label>
+								<label for="last_name">Ваша фамилия</label>
 							</div>
+
+							<!--Chose who are-->
+							<form action="#">
+								<p>
+									<!--Добавить логику для выбора одного пункта-->
+									<input type="checkbox" id="people" />
+									<label for="people">Снимаю</label>
+								</p>
+								<p>
+									<input type="checkbox" id="Hostel" />
+									<label for="Hostel">Сдаю</label>
+								</p>
+							</form>
+
 							<!--Secont string with number phone and skype-->
 							<div class="input-field col s6">
 								<i class="material-icons prefix">phone</i>
 								<input id="icon_telephone" type="tel" class="validate">
-								<label for="icon_telephone">Telephone</label>
+								<label for="icon_telephone">Ваш номер телефона</label>
 							</div>
+
 							<div class="input-field col s6">
 								<input id="skype" type="text" class="validate">
 								<label for="skype">Skype</label>
 							</div>
+
 							<!--Email -->
 							<div class="row">
 								<form class="col s12">
+									<div class="input-field col s12">
+										<i class="material-icons prefix">email</i>
+										<input id="email" type="email" class="validate">
+										<label for="email" data-error="wrong" data-success="right">Email </label>
+									</div>
+								</form>
+								<!--Chose region and country-->
+							</div>
+							<div class="input-field col s12">
+								<select class="browser-default">
+								<option value="" disabled selected>Выберите ваш город</option>
+								<option value="1">Санкт-Питербург</option>
+								<option value="2">Москва</option>
+								<option value="3">Другие города</option>
+							</select>
+							</div>
+
+							<!--Adding infromation about-->
+
+							<div class="row">
+								<form class="col s12">
 									<div class="row">
-										<div class="input-field col s12">
-											<i class="material-icons prefix">email</i>
-											<input id="email" type="email" class="validate">
-											<label for="email" data-error="wrong" data-success="right">Email</label>
+										<div class="input-field col s8">
+											<div>
+											<i class="material-icons prefix">clear_all</i>
+											<textarea id="description_acc" class="materialize-textarea" length="120"></textarea>
+											<label for="description_acc">Описание </label>
 										</div>
+										</div>
+										<!-- Switch dicription-->
+										<br>
+										<div class="switch">
+											<label>
+										Нет интернета
+										<input type="checkbox">
+										<span class="lever"></span>
+										Есть интернет
+										</label>
+										</div>
+										<br>
+										<div class="switch">
+											<label>
+										Есть питание  
+										<input type="checkbox">
+										<span class="lever"></span>
+										Нет питания
+										</label>
+										</div>
+
 									</div>
 								</form>
 							</div>
+
+
 							<!--upload photoes-->
 							<form action="#">
 								<div class="file-field input-field">
 									<div class="btn">
-										<span>Upload photo</span>
+										<span>Добавить</span>
 										<input type="file" multiple>
 									</div>
 									<div class="file-path-wrapper">
-										<input class="file-path validate" type="text" placeholder="Upload one or more photos">
+										<input class="file-path validate" type="text" placeholder="Вы можете загрузить несколько фотографий">
 									</div>
 								</div>
 							</form>
+
 						</div>
 					</form>
+
 				</div>
 			</div>
 		</div>
