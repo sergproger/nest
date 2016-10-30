@@ -1,14 +1,15 @@
 <nav class="navbar grey darken-3" role="navigation">
 	<div class="nav-wrapper" class="container">
 		<a href="#" class="brand-logo yellow-text text-darken-2"><i class="material-icons">cloud</i>Nest Hostels</a>
-        <a materialize="sideNav" href="#" data-activates="slide-out" class="button-collapse">
+		<a materialize="sideNav" href="#" data-activates="slide-out" class="button-collapse">
 			<i class="material-icons">menu</i>
 		</a>
 		<ul id="nav-mobile grey" class="right hide-on-med-and-down">
 			<li><a class="darken-3 yellow-text text-darken-2 waves-effect waves-light" routerLink="/firstview" routerLinkActive="active">Главная</a></li>
 			<li><a class="darken-3 yellow-text text-darken-2 waves-effect waves-light" href="#">Хостелы</a></li>
 			<li><a class="darken-3 yellow-text text-darken-2 waves-effect waves-light" routerLink="/contacts" routerLinkActive="active">Контакты</a></li>
-			<li><a class="darken-3 yellow-text text-darken-2 waves-effect waves-light" routerLink="/registration" routerLinkActive="active">Регистрация</a></li>
+			<li><a materialize="leanModal" [materializeParams]="[{dismissible: false}]" class="darken-3 yellow-text text-darken-2 waves-effect waves-light modal-trigger"
+					href="#windowin">Войти</a></li>
 			<!--<li>
 			<nav>
 				<div class="nav-wrapper grey darken-3">
@@ -26,3 +27,26 @@
 		<side-menu></side-menu>
 	</div>
 </nav>
+
+<!-- Modal Trigger -->
+<!--<a materialize="leanModal" [materializeParams]="[{dismissible: false}]" class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>-->
+
+<!-- Modal Structure -->
+<div id="windowin" class="modal">
+	<div class="modal-content">
+		<div class="row">
+			<div class="col s12 ">
+				<ul class="tabs" materialize="tabs">
+					<li class="tab col s3"><a class="active grey darken-3 yellow-text text-darken-3" href="#entrance">Вход</a></li>
+					<li class="tab col s3"><a href="#registration" class=" grey darken-3 grey yellow-text text-darken-3">Регистрация</a></li>
+				</ul>
+			</div>
+			<div id="entrance" class="col s12  ">Содержание входа</div>
+			<div id="registration" class="col s12">Содержание регистрация</div>
+		</div>
+	</div>
+	
+	<div class="row center">
+		<a href="#!" class="modal-action modal-close grey-text text-darken-3">Закрыть</a>
+	</div>
+</div>

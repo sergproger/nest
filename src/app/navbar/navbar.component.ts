@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'navbar',
@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
-  
+    actions = new EventEmitter<string>();
+  closeModel() {
+    this.actions.emit("closeModal");
+  }
  }
