@@ -1,6 +1,6 @@
 import { Hostel } from './hostel';
 
-export const HEROES: Hostel[] = [
+export const HOSTELS: Hostel[] = [
   {id: 1, nameHostel: 'Mr. Nice',descr:'Хостел в питере около метро',stars:3,price:600},
   {id: 2, nameHostel: 'Narco',descr:'Хостел в питере 5 минут от метро',stars:4,price:1000},
   {id: 3, nameHostel: 'Bombasto',descr:'Хостел в Санкт-Питербурге',stars:2,price:200},
