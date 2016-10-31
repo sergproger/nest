@@ -41,7 +41,32 @@
 					<li class="tab col s3"><a href="#registration" class=" grey darken-3 grey yellow-text text-darken-3">Регистрация</a></li>
 				</ul>
 			</div>
-			<div id="entrance" class="col s12  ">Содержание входа</div>
+			<div id="entrance" class="col s12  ">
+				<div class="row">
+					<form class="col l6">
+						<div class="input-field col s12">
+							<i class="material-icons prefix">email</i>
+							<input id="email" type="email" class="validate">
+							<label for="email" data-error="wrong" data-success="right">Email </label>
+						</div>
+					</form>
+				</div>
+				<div class="row">
+					<form class="col l6">
+						<div class="input-field col s12">
+							<i class="material-icons prefix">https</i>
+							<input id="password" type="password" class="validate">
+							<label for="password" data-error="wrong" data-success="right">Password </label>
+						</div>
+					</form>
+				</div>
+				<div class="row">
+					<div class="col l6 center">
+						<a class="btn-large waves-effect waves-light yellow darken-2" onclick="Materialize.toast('В жопу себе потыкай, а не на кнопку!', 4000,'')">Нагрубить</a>
+        				<a href="#" id="download-button" class="btn-large waves-effect waves-light yellow darken-2">Войти</a>
+					</div>
+      			</div>
+			</div>
 			<div id="registration" class="col s12">Содержание регистрация</div>
 		</div>
 	</div>
