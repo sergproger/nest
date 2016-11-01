@@ -1,8 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+
+import { Hostel } from './hostel';
 
 @Component({
-  selector: 'hostel',
+  selector: 'my-hostel',
   templateUrl: './hostel.component.html',
   styleUrls: ['./hostel.component.css']
 })
-export class HostelComponent { }
+export class HostelComponent { 
+
+  @Input() hostel:Hostel;
+
+}

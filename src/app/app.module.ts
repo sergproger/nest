@@ -17,6 +17,7 @@ import { SideMenuComponent } from './navbar/side-menu/side-menu.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { HostelsComponent } from './hostels/hostels.component';
+import { HostelComponent } from './hostels/hostel/hostel.component';
 
 import { PageNotFoundComponent } from './404error/page-not-found.component';
 
@@ -36,7 +37,8 @@ import { PageNotFoundComponent } from './404error/page-not-found.component';
     SideMenuComponent,
     RegistrationComponent,
     ContactsComponent,
-    HostelsComponent
+    HostelsComponent,
+    HostelComponent
   ],
   bootstrap: [ AppComponent ]
 })
