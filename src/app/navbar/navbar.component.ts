@@ -12,3 +12,7 @@ export class NavbarComponent {
     this.actions.emit("closeModal");
   }
  }
+//  $(document).ready(function(){
+//     $('ul.tabs').tabs();
+//   });
+        

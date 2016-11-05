@@ -18,6 +18,7 @@ import { RegistrationComponent } from './registration/registration.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { HostelsComponent } from './hostels/hostels.component';
 import { HostelComponent } from './hostels/hostel/hostel.component';
+import {CommunicationComponent} from './communication/communication.component'
 
 import { PageNotFoundComponent } from './404error/page-not-found.component';
 
@@ -38,7 +39,8 @@ import { PageNotFoundComponent } from './404error/page-not-found.component';
     RegistrationComponent,
     ContactsComponent,
     HostelsComponent,
-    HostelComponent
+    HostelComponent,
+    CommunicationComponent
   ],
   bootstrap: [ AppComponent ]
 })
