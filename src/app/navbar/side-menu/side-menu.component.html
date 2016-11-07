@@ -3,5 +3,84 @@
 	<li><a class="grey-text" href="#">Цены</a></li>
 	<li><a class="grey-text" href="#">Контакты</a></li>
 	<li><a class="grey-text" href="#">Питер</a></li>
-	<li><a class="grey-text" href="#">Войти</a></li>
+	<li><a materialize="leanModal" [materializeParams]="[{dismissible: false}]" class="grey-text waves-effect waves-light modal-trigger"
+					href="#modalWin">Войти</a></li>
 </ul>
+<!-- Modal Structure -->
+<div id="modalWin" class="modal" style="width:98%;max-height:100%">
+	<div class="modal-content">
+		<div class="row" style="margin:0px">
+			<!--tabs description-->
+			<div class="col s12 ">
+				<ul class="tabs" materialize="tabs">
+					<li class="tab col s6"><a class="active" class="grey lighten-5 grey-text text-darken-3" href="#logIn">Вход</a></li>
+					<li class="tab col s6"><a class="grey lighten-5 grey-text text-darken-3" href="#reg">Регистрация</a></li>
+				</ul>
+				<br>
+				<div id="facebookbtn" class="col s12 center light-blue darken-4 white-text z-depth-2 btn">Facebook</div>
+				<br>
+				<div id="googlebtn" class="col s5 center red darken-4 white-text z-depth-2 btn">Google</div>
+				<div id="vkbtn" class="col s5 center blue accent-3 offset-s2 white-text z-depth-2 btn">VK</div>
+				<br>
+				<!--input description-->
+				<div id="logIn" class="col s12 ">
+					<div class="row">
+						<form class="col s12">
+							<div class="input-field col s12">
+								<i class="material-icons prefix">email</i>
+								<input id="email" type="email" class="validate">
+								<label for="email" data-error="wrong" data-success="right">Email </label>
+							</div>
+						</form>
+					</div>
+
+					<div class="row">
+						<form class="col s12">
+							<div class="input-field col s12">
+								<i class="material-icons prefix">https</i>
+								<input id="password" type="password" class="validate">
+								<label for="password" data-error="wrong" data-success="right">Password </label>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!--registration description-->
+				<div id="reg" class="col s12 ">
+					<div class="row">
+						<form class="col s12">
+							<div class="input-field col s12">
+								<i class="material-icons prefix">email</i>
+								<input id="email" type="email" class="validate">
+								<label for="email" data-error="wrong" data-success="right">Email </label>
+							</div>
+						</form>
+					</div>
+
+					<div class="row">
+						<form class="col s12">
+							<div class="input-field col s12">
+								<i class="material-icons prefix">https</i>
+								<input id="password" type="password" class="validate">
+								<label for="password" data-error="wrong" data-success="right">Password </label>
+							</div>
+						</form>
+					</div>
+
+					<div class="row">
+						<form class="col s12">
+							<div class="input-field col s12">
+								<i class="material-icons prefix">https</i>
+								<input id="password" type="password" class="validate">
+								<label for="password" data-error="wrong" data-success="right">Password </label>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<div class="row center">
+					<a class="btn-flat grey lighten-4" style="width:100%;" href="#">Войти</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
