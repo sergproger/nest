@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
+import { NgSemanticModule } from 'ng-semantic';
 
 
 import { AppComponent } from './app.component';
@@ -27,7 +28,8 @@ import { PageNotFoundComponent } from './404error/page-not-found.component';
     BrowserModule,
     RouterModule,
     AppRoutingModule,
-    MaterializeModule
+    MaterializeModule,
+    NgSemanticModule
   ],
   declarations: [
     AppComponent,
