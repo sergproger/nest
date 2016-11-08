@@ -1,44 +1,70 @@
-<div id="windowin" class="modal" style="width:20%">
+<a materialize="leanModal" [materializeParams]="[{dismissible: true}]" class="darken-3 yellow-text text-darken-2 waves-effect waves-light modal-trigger"
+	href="#windowin">Войти</a>
+<!-- Modal Structure -->
+<div id="windowin" class="modal" style="width:24%">
 	<div class="modal-content">
 		<div class="row">
+			<!--tabs description-->
 			<div class="col s12 ">
-				<ul class="tabs" materialize="tabs">
-					<li class="tab col s6"><a class="active grey darken-3 yellow-text text-darken-3" href="#entrance">Вход</a></li>
-					<li class="tab col s6"><a href="#registration" class=" grey darken-3 grey yellow-text text-darken-3">Регистрация</a></li>
-				</ul>
-			</div>
+				<ul class="tabs">
 
-			<div id="entrance" class="col s12  ">
-				<div class="row">
-					<form class="col l12">
-						<div class="input-field col s12">
-							<i class="material-icons prefix">email</i>
-							<input id="email" type="email" class="validate">
-							<label for="email" data-error="wrong" data-success="right">Email </label>
-						</div>
-					</form>
-				</div>
-				<div class="row">
-					<form class="col l12">
-						<div class="input-field col s12">
-							<i class="material-icons prefix">https</i>
-							<input id="password" type="password" class="validate">
-							<label for="password" data-error="wrong" data-success="right">Password </label>
-						</div>
-					</form>
-				</div>
-				<div class="row">
-					<div class="col l12 center">
-						<a class="btn-large waves-effect waves-light yellow darken-2" onclick="Materialize.toast('В жопу себе потыкай, а не на кнопку!', 4000,'')">Нагрубить</a>
-						<a href="#" id="download-button" class="btn-large waves-effect waves-light yellow darken-2">Войти</a>
+					<li class="tab col s6"><a class="grey lighten-5 grey-text text-darken-3" href="#entrance">Вход</a></li>
+					<li class="tab col s6"><a class="grey lighten-5 grey-text text-darken-3" href="#registration">Регистрация</a></li>
+				</ul>
+				<br>
+				<div id="facebookbtn" class="col s12 center light-blue darken-4 white-text z-depth-2 btn">Facebook</div>
+				<br><br>
+				<div id="googlebtn" class="col s5 center red darken-4 white-text z-depth-2 btn">Google</div>
+				<div id="vkbtn" class="col s5 center blue accent-3 offset-s2 white-text z-depth-2 btn">VK</div>
+				<br>
+				<br>
+				<!--input description-->
+				<div id="entrance" class="col s12 ">
+					<div class="row">
+						<form class="col s12">
+							<div class="input-field col s12">
+								<i class="material-icons prefix">email</i>
+								<input id="email" type="email" class="validate">
+								<label for="email" data-error="wrong" data-success="right">Email </label>
+							</div>
+						</form>
+					</div>
+
+					<div class="row">
+						<form class="col s12">
+							<div class="input-field col s12">
+								<i class="material-icons prefix">https</i>
+								<input id="password" type="password" class="validate">
+								<label for="password" data-error="wrong" data-success="right">Password </label>
+							</div>
+						</form>
 					</div>
 				</div>
-			</div>
-			<div id="registration" class="col s12">Содержание регистрация</div>
-		</div>
-	</div>
+				<!--registration description-->
+				<div id="registration" class="col s12 ">
+					<div class="row">
+						<form class="col s12">
+							<div class="input-field col s12">
+								<i class="material-icons prefix">email</i>
+								<input id="email" type="email" class="validate">
+								<label for="email" data-error="wrong" data-success="right">Email </label>
+							</div>
+						</form>
+					</div>
 
-	<div class="row center">
-		<a href="#!" class="modal-action modal-close grey-text text-darken-3 s12">Закрыть</a>
-	</div>
-</div>
+					<div class="row">
+						<form class="col s12">
+							<div class="input-field col s12">
+								<i class="material-icons prefix">https</i>
+								<input id="password" type="password" class="validate">
+								<label for="password" data-error="wrong" data-success="right">Password </label>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="row center">
+					<a class="btn-flat grey lighten-4" style="width:90%;" href="#">Войти</a>
+				</div>
+
+			</div>
+		</div>
