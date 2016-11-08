@@ -1,8 +1,15 @@
-import { Component } from '@angular/core';
+import { Component,EventEmitter } from '@angular/core';
+import {MaterializeAction} from "angular2-materialize";
 
 @Component({
   selector: 'registration',
   templateUrl: './registration.component.html',
   styleUrls: ['./registration.component.css']
 })
-export class RegistrationComponent { }
+export class RegistrationComponent {
+
+   modalActions = new EventEmitter<string|MaterializeAction>();
+  openModal() {
+    this.modalActions.emit({action:"modal",params:['open']});
+  }
+ }

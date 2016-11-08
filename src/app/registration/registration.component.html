@@ -1,13 +1,11 @@
-<a materialize="leanModal" [materializeParams]="[{dismissible: true}]" class="darken-3 yellow-text text-darken-2 waves-effect waves-light modal-trigger"
-	href="#windowin">Войти</a>
+<a class="darken-3 yellow-text text-darken-2 waves-effect waves-light" (click)="openModal()">Войти</a>
 <!-- Modal Structure -->
-<div id="windowin" class="modal" style="width:24%">
+<div id="modal1" class="modal"  style="width:24%" materialize="modal" [materializeParams]="[{dismissible: true}]" [materializeActions]="modalActions">
 	<div class="modal-content">
 		<div class="row">
 			<!--tabs description-->
 			<div class="col s12 ">
 				<ul class="tabs">
-
 					<li class="tab col s6"><a class="grey lighten-5 grey-text text-darken-3" href="#entrance">Вход</a></li>
 					<li class="tab col s6"><a class="grey lighten-5 grey-text text-darken-3" href="#registration">Регистрация</a></li>
 				</ul>
@@ -66,5 +64,5 @@
 					<a class="btn-flat grey lighten-4" style="width:90%;" href="#">Войти</a>
 				</div>
 
-			</div>
 		</div>
+	</div>
