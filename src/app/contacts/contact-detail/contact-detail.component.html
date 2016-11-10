@@ -1,16 +1,14 @@
 <div class="container">
-	<div class="row">
-		<h3 class="yellow-text text-darken-2 center ">Контакты</h3>
 		<div class="row">
-			<div class="col s12 m5 l5">
+			<div class="col s6 m5 l4">
 				<ul class="collection">
 					<li class="collection-item avatar marg grey lighten-2">
-						<div class="row">
+						<div class="row marg">
 							<div class="col s1 l1">
       							<i class="material-icons circle yellow-text text-darken-2">perm_identity</i>
 							</div>
 							<div class="col s10 l10">
-      							<span class="title"><b>Оробей Антон Сергеевич</b></span>
+      							<span class="title"><b>{{contact.FIO}}</b></span>
       							<!--<blockquote class="grey lighten-3">Front-end разработчик</blockquote>-->
       							<!--<a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>-->
 							</div>
@@ -22,7 +20,7 @@
 								<i class="material-icons circle yellow-text text-darken-2">call</i>
 							</div>
 							<div class="col s11 m11 l11">
-								+375 33 698 35 14
+								{{contact.call}}
 							</div>
 						</div>
 						<div class="row marg bord">
@@ -30,7 +28,7 @@
 								<i class="material-icons circle yellow-text text-darken-2">email</i>
 							</div>
 							<div class="col s11 m11 l11">
-								example@gmail.com
+								{{contact.email}}
 							</div>
 						</div>
 						<div class="row marg bord">
@@ -38,12 +36,11 @@
 								<i class="material-icons circle yellow-text text-darken-2">location_on</i>
 							</div>
 							<div class="col s11 m11 l11">
-								ул. Маяковского, д.146
+								{{contact.location}}
 							</div>
 						</div>
 					</li>
   				</ul>
 			</div>
 		</div>
-	</div>
 </div>
