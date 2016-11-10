@@ -1,4 +1,5 @@
 import { Component,EventEmitter } from '@angular/core';
+import {MaterializeAction} from "angular2-materialize";
 
 @Component({
   selector: 'navbar',
@@ -7,9 +8,9 @@ import { Component,EventEmitter } from '@angular/core';
 })
 export class NavbarComponent {
 
-    actions = new EventEmitter<string>();
-  closeModel() {
-    this.actions.emit("closeModal");
+   modalActions = new EventEmitter<string|MaterializeAction>();
+  openModal() {
+    this.modalActions.emit({action:"modal",params:['open']});
   }
  }
 //  $(document).ready(function(){
