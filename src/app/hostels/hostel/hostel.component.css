@@ -1,0 +1,16 @@
+.HostelName{
+    /*padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;*/
+    border-bottom: 1px solid #e0e0e0;
+}
+.waves-effect.waves-yellow .waves-ripple {
+     /* The alpha value allows the text and background color
+     of the button to still show through. */
+      background-color: #fbc02d;
+}
+.padd{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
