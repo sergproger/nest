@@ -1,45 +1,24 @@
-<a class="darken-3 yellow-text text-darken-2 waves-effect waves-light" (click)="openModal()">Войти</a>
 <!-- Modal Structure -->
-<div id="modal1" class="modal"  style="width:24%" materialize="modal" [materializeParams]="[{dismissible: true}]" [materializeActions]="modalActions">
+<div id="registration" class="modal" style="width:24%" materialize="modal" [materializeParams]="[{dismissible: true}]" [materializeActions]="modalActions">
 	<div class="modal-content">
 		<div class="row">
 			<!--tabs description-->
 			<div class="col s12 ">
-				<ul class="tabs">
-					<li class="tab col s6"><a class="grey lighten-5 grey-text text-darken-3" href="#entrance">Вход</a></li>
-					<li class="tab col s6"><a class="grey lighten-5 grey-text text-darken-3" href="#registration">Регистрация</a></li>
-				</ul>
-				<br>
-				<div id="facebookbtn" class="col s12 center light-blue darken-4 white-text z-depth-2 btn">Facebook</div>
+
+				<div class="card-panel center">
+					<span class="blue-text text-darken-4">Регистрация</span>
+				</div>
+				<div id="facebookbtn" class="col s12 center light-blue darken-4 white-text z-depth-2 btn">
+					<i src="img/Facebook.png"></i>Facebook</div>
 				<br><br>
-				<div id="googlebtn" class="col s5 center red darken-4 white-text z-depth-2 btn">Google</div>
-				<div id="vkbtn" class="col s5 center blue accent-3 offset-s2 white-text z-depth-2 btn">VK</div>
+				<div id="googlebtn" class="col s5 center red darken-4 white-text z-depth-2 btn">
+					<i src="img/Google.png"></i>Google</div>
+				<div id="vkbtn" class="col s5 center blue accent-3 offset-s2 white-text z-depth-2 btn">
+					<i src="img/VKontakte.png"></i>VK</div>
 				<br>
 				<br>
-				<!--input description-->
-				<div id="entrance" class="col s12 ">
-					<div class="row">
-						<form class="col s12">
-							<div class="input-field col s12">
-								<i class="material-icons prefix">email</i>
-								<input id="email" type="email" class="validate">
-								<label for="email" data-error="wrong" data-success="right">Email </label>
-							</div>
-						</form>
-					</div>
-
-					<div class="row">
-						<form class="col s12">
-							<div class="input-field col s12">
-								<i class="material-icons prefix">https</i>
-								<input id="password" type="password" class="validate">
-								<label for="password" data-error="wrong" data-success="right">Password </label>
-							</div>
-						</form>
-					</div>
-				</div>
 				<!--registration description-->
-				<div id="registration" class="col s12 ">
+				<div id="registration">
 					<div class="row">
 						<form class="col s12">
 							<div class="input-field col s12">
@@ -59,10 +38,30 @@
 							</div>
 						</form>
 					</div>
-				</div>
-				<div class="row center">
-					<a class="btn-flat grey lighten-4" style="width:90%;" href="#">Войти</a>
+
+
+					<div class="row">
+						<form class="col s12">
+							<div class="input-field col s12">
+								<i class="material-icons prefix">https</i>
+								<input id="password" type="password" class="validate">
+								<label for="password" data-error="wrong" data-success="right">Password </label>
+							</div>
+						</form>
+					</div>
 				</div>
 
+				<div class="row center">
+					<label>
+						<a class='blue-text text-darken-4' href='#!'><b>Уже зарегистрированы?</b></a>
+					</label>
+				</div>
+
+				<div class="row center">
+					<button type='submit' name='btnIn' class='col s12 btn-large waves-effect white blue-text text-darken-4'>Зарегистрироваться</button>
+
+				</div>
+
+			</div>
 		</div>
 	</div>
