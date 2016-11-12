@@ -8,6 +8,8 @@ import { HostelsComponent } from './hostels/hostels.component';
 
 import { PageNotFoundComponent } from './404error/page-not-found.component';
 
+import {EntranceComponent} from './entrance/entrance.component'
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/firstview', pathMatch: 'full' },

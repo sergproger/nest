@@ -20,6 +20,7 @@ import { ContactDetailComponent } from './contacts/contact-detail/contact-detail
 import { HostelsComponent } from './hostels/hostels.component';
 import { HostelComponent } from './hostels/hostel/hostel.component';
 import {CommunicationComponent} from './communication/communication.component'
+import {EntranceComponent} from './entrance/entrance.component'
 
 import { PageNotFoundComponent } from './404error/page-not-found.component';
 
@@ -42,7 +43,8 @@ import { PageNotFoundComponent } from './404error/page-not-found.component';
     ContactDetailComponent,
     HostelsComponent,
     HostelComponent,
-    CommunicationComponent
+    CommunicationComponent,
+    EntranceComponent
   ],
   bootstrap: [ AppComponent ]
 })
