@@ -1,5 +1,5 @@
 <!-- Modal Structure -->
-<div id="registration" class="modal" style="width:24%" materialize="modal" [materializeParams]="[{dismissible: true}]" [materializeActions]="modalActions">
+<div id="entrance" class="modal" style="width:24%" materialize="modal" [materializeParams]="[{dismissible: true}]" [materializeActions]="modalActions">
 	<div class="modal-content">
 		<div class="row">
 			<!--tabs description-->
@@ -9,12 +9,12 @@
 					<span class="blue-text text-darken-4">Регистрация</span>
 				</div>
 				<div id="facebookbtn" class="col s12 center light-blue darken-4 white-text z-depth-2 btn">
-					<i src="../../img/Facebook.png"></i>Facebook</div>
+					<i src="img/Facebook.png"></i>Facebook</div>
 				<br><br>
 				<div id="googlebtn" class="col s5 center red darken-4 white-text z-depth-2 btn">
-					<i src="../../img/Google.png"></i>Google</div>
+					<i src="img/Google.png"></i>Google</div>
 				<div id="vkbtn" class="col s5 center blue accent-3 offset-s2 white-text z-depth-2 btn">
-					<i src="../../img/VKontakte.png"></i>VK</div>
+					<i src="img/VKontakte.png"></i>VK</div>
 				<br>
 				<br>
 				<!--registration description-->
@@ -37,31 +37,17 @@
 								<label for="password" data-error="wrong" data-success="right">Password </label>
 							</div>
 						</form>
-					</div>
-
-
-					<div class="row">
-						<form class="col s12">
-							<div class="input-field col s12">
-								<i class="material-icons prefix">https</i>
-								<input id="password" type="password" class="validate">
-								<label for="password" data-error="wrong" data-success="right">Password </label>
-							</div>
-						</form>
-					</div>
-				</div>
-
-				<div class="row center">
-					<label>
-						<a class='blue-text text-darken-4' href='#!'><b>Уже зарегистрированы?</b></a>
+						<label style='float:right;'>
+						<a class='blue-text text-darken-4' href='#!'><b>Забыли пароль?</b></a>
 					</label>
+					</div>
+
+
+					<div class="row center">
+						<button type='submit' name='btnIn' class='col s12 btn-large waves-effect white blue-text text-darken-4'>Зарегистрироваться</button>
+
+					</div>
+
 				</div>
-
-				<div class="row center">
-					<button type='submit' name='btnIn' class='col s12 btn-large waves-effect white blue-text text-darken-4'>Зарегистрироваться</button>
-
-				</div>
-
 			</div>
 		</div>
-	</div>
