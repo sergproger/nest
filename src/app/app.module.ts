@@ -21,7 +21,7 @@ import { HostelsComponent } from './hostels/hostels.component';
 import { HostelComponent } from './hostels/hostel/hostel.component';
 import {CommunicationComponent} from './communication/communication.component'
 import {EntranceComponent} from './entrance/entrance.component'
-
+import {FeedbackComponent} from './feedback/feedback.component'
 import { PageNotFoundComponent } from './404error/page-not-found.component';
 
 @NgModule({
@@ -44,7 +44,8 @@ import { PageNotFoundComponent } from './404error/page-not-found.component';
     HostelsComponent,
     HostelComponent,
     CommunicationComponent,
-    EntranceComponent
+    EntranceComponent,
+    FeedbackComponent
   ],
   bootstrap: [ AppComponent ]
 })
