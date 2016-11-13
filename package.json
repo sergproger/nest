@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Nest web project",
   "scripts": {
-    "start": "webpack-dev-server --inline --hot --progress --port 8080",
+    "serve": "http-server dist --cors",
+    "start": "webpack-dev-server --inline --colors --watch --display-error-details --display-cached  --progress --port 8080 --hot",
     "test": "karma start",
     "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail"
   },
