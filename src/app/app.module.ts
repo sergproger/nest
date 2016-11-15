@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { AppComponent } from './app.component';
 
@@ -47,6 +48,7 @@ import { PageNotFoundComponent } from './404error/page-not-found.component';
     EntranceComponent,
     FeedbackComponent
   ],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
