@@ -12,4 +12,7 @@ export class EntranceComponent {
   openModal() {
     this.modalActions.emit({action:"modal",params:['open']});
   }
+  closeModal() {
+    this.modalActions.emit({action:"modal",params:['close']});
+  }
  }
