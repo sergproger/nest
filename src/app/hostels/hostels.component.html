@@ -1,5 +1,10 @@
-<ul>
+<!--<ul>
 	<li *ngFor="let hostel of hostels">
 		<my-hostel [hostel]="hostel"></my-hostel>
 	</li>
-</ul>
+</ul>-->
+<div class="row container">
+	<div class="col s12 m4" *ngFor="let hostel of hostels">
+		<my-hostel [hostel]="hostel"></my-hostel>
+	</div>
+</div>
