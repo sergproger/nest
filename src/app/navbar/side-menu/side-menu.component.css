@@ -1,0 +1,9 @@
+.side-nav{
+    top: 56px;
+    height: calc(100%-56px);
+    width: 50%;
+}
+#sidenav-overlay{
+    top: 56px;
+    left: 50%;
+}
