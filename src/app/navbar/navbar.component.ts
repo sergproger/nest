@@ -17,7 +17,7 @@ export class NavbarComponent {
 
     ngAfterViewInit() {
         //sivenav
-        $(".button-collapse").sideNav();
+        $(".button-collapse").sideNav({draggable: false});
 
         $('.collapsible').collapsible({
             accordion: false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
@@ -28,7 +28,7 @@ export class NavbarComponent {
         function timeDalay() {
             $('#sidenav-overlay').css('z-index', '966');
             }
-        setTimeout(timeDalay, 1);
+        setTimeout(timeDalay, 50);
         }
     }
 
