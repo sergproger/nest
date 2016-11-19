@@ -1,9 +1,14 @@
+@media screen and (max-width: 1000px){
+.side-nav{
+    top: 65px;
+    height: calc(100%-65px);
+    width: 50%;
+}
+}
+@media screen and (max-width: 600px){
 .side-nav{
     top: 56px;
     height: calc(100%-56px);
     width: 50%;
 }
-#sidenav-overlay{
-    top: 56px;
-    left: 50%;
 }

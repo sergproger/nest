@@ -1,18 +1,20 @@
 <div class="navbar-fixed">
-<nav class="navbar grey darken-3 nav-height" role="navigation">
-	<div class="nav-wrapper" class="container">
-		<a class="brand-logo yellow-text text-darken-2" routerLink="/firstview"><i class="material-icons" style="font-size: 45px">store</i>Nest Hostels</a>
-		<a materialize="sideNav" href="#" data-activates="slide-out" class="button-collapse">
-			<i class="material-icons">menu</i>
-		</a>
-		<ul id="nav-mobile grey" class="right hide-on-med-and-down">
-			<li><a class="darken-3 yellow-text text-darken-2 waves-effect waves-light" routerLink="/firstview" routerLinkActive="active">Главная</a></li>
-			<li><a class="darken-3 yellow-text text-darken-2 waves-effect waves-light" routerLink="/hostels">Хостелы</a></li>
-			<li><a class="darken-3 yellow-text text-darken-2 waves-effect waves-light" routerLink="/contacts">Контакты</a></li>
-			<li><a class="darken-3 yellow-text text-darken-2 waves-effect waves-light" href="#registration">Войти</a></li>
-		</ul>
-		<side-menu></side-menu>
-	</div>
-</nav>
+	<nav class="navbar grey darken-3 nav-height" role="navigation">
+		<div class="nav-wrapper" class="container">
+			<a class="brand-logo yellow-text text-darken-2" routerLink="/firstview"><i class="material-icons" style="font-size: 45px">store</i>Nest Hostels</a>
+
+			<ul id="nav-mobile grey" class="right hide-on-med-and-down">
+				<li><a class="darken-3 yellow-text text-darken-2 waves-effect waves-light" routerLink="/firstview" routerLinkActive="active">Главная</a></li>
+				<li><a class="darken-3 yellow-text text-darken-2 waves-effect waves-light" routerLink="/hostels">Хостелы</a></li>
+				<li><a class="darken-3 yellow-text text-darken-2 waves-effect waves-light" routerLink="/contacts">Контакты</a></li>
+				<li><a class="darken-3 yellow-text text-darken-2 waves-effect waves-light" href="#registration">Войти</a></li>
+			</ul>
+			<a href="#" data-activates="slide-out" class="button-collapse" (click)="collapseButtonClick()">
+				<i class="material-icons">menu</i>
+			</a>
+			
+		</div>
+	</nav>
 </div>
+<side-menu></side-menu>
 <registration></registration>
