@@ -17,4 +17,7 @@ nav i.material-icons{
         .nav-height{
                 height: 56px !important;
         }
+        nav i.material-icons{
+                line-height: 56px !important;
+        }
 }
