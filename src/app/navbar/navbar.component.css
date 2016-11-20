@@ -4,6 +4,15 @@
 .nav-height{
         height: 65px !important;
 }
+nav i.material-icons{
+        line-height: 64px !important;
+}
+.marg-nav{
+        margin-right: -14.5px !important;
+}
+.padd-logo{
+        padding-left: 2.5px !important;
+}
 @media screen and (max-width: 600px){
         .nav-height{
                 height: 56px !important;
