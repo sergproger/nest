@@ -7,8 +7,8 @@ import { Hostel } from './hostel';
   templateUrl: './hostel.component.html',
   styleUrls: ['./hostel.component.css']
 })
-export class HostelComponent { 
+export class HostelComponent {
 
-  @Input() hostel:Hostel;
+  @Input() hostel: Hostel;
 
 }

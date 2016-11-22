@@ -1,7 +1,8 @@
 export class Hostel{
     id:number;
     nameHostel:string;
+    numberPerson:number;
     descr:string;
     stars:number;
-    price:number;
+    price:string;
 }
