@@ -1,5 +1,5 @@
 <!-- Modal Structure -->
-<div id="registration" class="modal" style="width:24%" materialize="modal" [materializeParams]="[{dismissible: true}]" [materializeActions]="modalActions">
+<div id="registration" class="modal" materialize="modal" [materializeParams]="[{dismissible: true}]" [materializeActions]="modalActions">
 
   <div class="modal-content">
     <div class="row">
@@ -31,7 +31,7 @@
           <label for='password'>Введите ваш пароль</label>
         </div>
         <label style='float: right;'>
-      <a class='darken-3 red-text text-darken-3' href='#!'>Придумать пароль?</a>
+      <a class='darken-3 blue-text text-light-darken-3' href='#!'>Придумать пароль?</a>
      </label>
       </div>
 
@@ -40,7 +40,7 @@
       </div>
 
       <div class="row center">
-        <a (click)="closeModal()" href="#entrance" class="red-text text-darken-3">Уже есть аккаунт?</a>
+        <a (click)="closeModal()" href="#entrance" class="blue-text text-light-darken-3">Уже есть аккаунт?</a>
       </div>
 
 
