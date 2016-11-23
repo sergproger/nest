@@ -1,8 +1,8 @@
 .forcenter{
     align-items: center;
 }
-
-.modal { max-width: 22% !important ; max-height: 100% !important ; overflow-y: hidden !important ;  opacity: .5;}  /* increase the width, height and prevent vertical scroll! However, i don't recommend this, its better to turn on vertical scrolling. */
+/* increase the width, height and prevent vertical scroll! However, i don't recommend this, its better to turn on vertical scrolling. */
+.modal { max-width: 22% !important ; max-height: 100% !important ; overflow-y: hidden !important ;  opacity: 0.5;}  
    /* label color */
    .input-field label {
      color: grey darken-1;
