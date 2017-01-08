@@ -4,6 +4,9 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var commonConfig = require('./webpack.common.js');
 var helpers = require('./helpers');
 
+const UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
+
+
 const ENV = process.env.NODE_ENV = process.env.ENV = 'production';
 
 module.exports = webpackMerge(commonConfig, {
@@ -23,11 +26,28 @@ module.exports = webpackMerge(commonConfig, {
   plugins: [
     new webpack.NoErrorsPlugin(),
     new webpack.optimize.DedupePlugin(),
-    // new webpack.optimize.UglifyJsPlugin({ // https://github.com/angular/angular/issues/10618
-    //   mangle: {
-    //     keep_fnames: true
-    //   }
-    // }),
+
+    new UglifyJsPlugin({
+      // beautify: true, //debug
+      // mangle: false, //debug
+      // dead_code: false, //debug
+      // unused: false, //debug
+      // deadCode: false, //debug
+      // compress: {
+      //   screw_ie8: true,
+      //   keep_fnames: true,
+      //   drop_debugger: false,
+      //   dead_code: false,
+      //   unused: false
+      // }, // debug
+      // comments: true, //debug
+
+      beautify: false, //prod
+      mangle: { screw_ie8 : true }, //prod
+      compress: { screw_ie8: true }, //prod
+      comments: false //prod
+    }),
+
     new ExtractTextPlugin('[name].[hash].css'),
     new webpack.DefinePlugin({
       'process.env': {
